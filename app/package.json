@@ -11,8 +11,14 @@
     "tree-kill": "^1.1.0",
     "urlsafe-base64": "^1.0.0",
     "vue": "^2.0.1",
-    "vue-electron": "^1.0.0"
+    "vue-electron": "^1.0.0",
+    "snyk": "^1.258.2"
   },
   "devDependencies": {},
-  "author": "erguotou <erguotou525@gmail.com>"
+  "author": "erguotou <erguotou525@gmail.com>",
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
